@@ -23,20 +23,20 @@ The mappings use **various transformations** to implement Slowly Changing Dimens
 - **Update Strategy Transformation** to handle updates per SCD type (overwrite, add new version, or update existing fields).
 - **Target Definition** to load final records into the data warehouse.
 
-## 📸 Screenshots – SCD Type 2 (Date Method)
+## 📸 SCD Type 2 (Date Method)
 
-### **Mapping for SCD Type 2 (Date Method)**
-![SCD Type 2 Map Flow](images/SCD_Type2_Date_Map_Flow.png)
+### **Mapping Screenshots**
+![SCD Type 2 Map Flow](images/scd_type2_date_mapping_flow.png)
 
-![SCD Type 2 Mapping](images/SCD_Type2_Date_Mapping.png)  
+![SCD Type 2 Mapping](images/scd_type2_date_mapping.png)  
 🔹 *Compares source and target using MD5, identifies changes, and routes records for insert/update.*
 
 ### **Workflow Execution Screenshot**
-![Workflow Execution](images/SCD_Type2_Date_Workflow.png)  
+![Workflow Execution](images/scd_type2_date_workflow.png)  
 🔹 *Shows successful execution of the workflow processing changes in dimension records.*
 
 ### **Target Table After Execution**
-![Target Table Results](images/SCD_Type2_Date_Target_Data.png)  
+![Target Table Results](images/scd_type2_date_target_data.png)  
 🔹 *Demonstrates historical tracking using Effective Date and End Date columns.*
 
 
